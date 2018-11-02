@@ -1,0 +1,15 @@
+
+
+// Load in a dataset of compound properties
+data = new data.materials.CompositionDataset
+read magpie-scripts/ternary_generation_line.txt
+data attributes properties directory ../slac-metallic-glasses/magpie/lookup-data/
+data attributes properties add set general
+data attributes generate
+
+
+read magpie-scripts/write_ternary_feature_data.txt
+
+
+
+exit

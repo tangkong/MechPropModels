@@ -1,0 +1,22 @@
+// This script creates a hierarchical model design to predict the band gap energy of crystalline compounds.
+//   Run by executing this command from the same directory containing this script:
+//       java -jar magpie/dist/Magpie.jar hierarchical-bandgap-model.in
+//   The calculation takes approximately 6.5 minutes on a computer with a 3.5GHz processor and 4GB of RAM
+
+// Load in a dataset of compound properties
+data = new data.materials.CompositionDataset
+read magpie-scripts/load_training_data.txt
+data filter exclude ContainsElementFilter He Ne Ar Kr Xe
+// data duplicates AveragingDuplicateResolver
+data attributes properties directory ../slac-metallic-glasses/magpie/lookup-data/
+data attributes properties add set general
+// data attributes properties add BulkModulus ShearModulus
+data attributes generate
+
+
+read magpie-scripts/write_feature_data.txt
+
+// Print execution time
+timer elapsed
+
+exit

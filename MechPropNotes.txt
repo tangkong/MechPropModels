@@ -1,0 +1,32 @@
+Mech Prop Models Thoughts, Notes, To-Do
+===============================================================================
+Questions:
+    What is the best scoring system?  For regressors, r2/rms?
+    Opinions on how to deal with duplicates
+    Which datasets include which others?  
+        Only use Suchi's dataset.
+        
+    Jae had to do a lot of cleaning to be satisfied.  
+    Vagard's law performance to compare to our score
+    How clustered is data?
+    How biased? 
+    Try clustering .... based on?
+    1% threshold for duplicates?
+    
+    Figure out error'd lines
+    
+    Feature descriptions: https://github.com/hackingmaterials/matminer/tree/master/matminer/utils/data_files/magpie_elementdata
+        look for volume?
+        density as a feature?  Add this
+        
+    Correlations between different properties (hardness vs modulus etc)
+    
+Take aways:
+    Wrap up questions
+        ? Does it predict new systems well?
+        ? Does it outperform vegards's law?
+            1: look at linear combination of elements
+            2: compare to feature set without density features, how much does the model improve\
+        ? Does it interpolate between different chemistries 
+            CV by clustering
+        ? Look at statistics, deviation, thresholds between values...
