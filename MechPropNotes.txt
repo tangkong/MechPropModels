@@ -30,3 +30,12 @@ Take aways:
         ? Does it interpolate between different chemistries 
             CV by clustering
         ? Look at statistics, deviation, thresholds between values...
+        ? Where are errors?
+            94: T0+
+            273: M0+
+            326: Glass0+
+            327 - 364: Single elements
+            383, 385: Single feature... Zr64.13 Al10 Cu15.75 Ni10.12 S2
+            598:  4 features errored (2nan, 2inf) Al3 Fe30 B6 P16 I45 N1
+            572: one inf feature, Fe1 W1
+            
