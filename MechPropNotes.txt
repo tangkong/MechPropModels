@@ -38,4 +38,14 @@ Take aways:
             383, 385: Single feature... Zr64.13 Al10 Cu15.75 Ni10.12 S2
             598:  4 features errored (2nan, 2inf) Al3 Fe30 B6 P16 I45 N1
             572: one inf feature, Fe1 W1
-            
+
+===============================================================================
+1/11/2019
+-Finished MAPI setup, synced with Github
+
+To-Do
+Train model on MAPI data.
+    Get new computer with python 3.4+ for matminer purposes
+    Large feature set, take time to compute
+
+Talk to Logan about maybe using their resources
