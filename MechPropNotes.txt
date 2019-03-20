@@ -49,3 +49,55 @@ Train model on MAPI data.
     Large feature set, take time to compute
 
 Talk to Logan about maybe using their resources
+
+
+===============================================================================
+Melting point prediction formula, vibration vs cohesive energy
+ - One figure showing gradual improvement in r2 as incorporate vegard's, etc.
+ - Conclude that amorphous metals are behaving like hard spheres. 
+ - Using vegard's law as a sort of stacked model? 
+    Can force model to use some physics
+    
+pugh criteria? -> Looking for new alloys with certain ductility
+Lindamen criteria, calculation of melting point
+    could float as potential future applications, looking at theory and deviations therefrom
+    
+Mixing criteria?  How do you / can you get this from magpie features?
+    adding/extending magpie, need mixing enthalpies, bonding stuff etc
+
+separation of close packed structures could be useful/powerful
+
+--> After removing outliers, look at significant deviations, see why they are special?
+
+Looking into #atoms in asymmetric unit cell, and using as a complexity parameter
+
+
+===============================================================================
+https://homes.cs.washington.edu/~marcotcr/blog/lime/
+https://github.com/marcotcr/lime/
+https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV
+
+
+===============================================================================
+2/19/19
+https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9
+http://blog.datadive.net/prediction-intervals-for-random-forests/
+
+Random forest = Bagging / Bootstrap Aggregation
+
+Vegards + Difference = Boosting. (ensemble technique, sequential fitting and fitting error form prior trees)
+    Issues with over fitting
+    Must tune hyper parameters
+===============================================================================
+Is it ever worth thinking about MG search as an unsupervised learning problem?  Probably not, since we need to supply the result of glass/not glass
+
+Density typically scales/trends with what information?  We should make sure not to bias by that, but also can we re-gain that from features?
+    - Young's modulus?  https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1995.0075
+
+    
+===============================================================================
+Looking at repeatability of rfecv
+-Density (MG) initial RFECV, repeated trials
+    Optimal features: [136, 48, 16, 16, 30]
+-Density (MG) differene model
+    Optimal features: [4, 24

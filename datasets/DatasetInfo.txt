@@ -1,0 +1,11 @@
+Dataset info
+
+MG density data, reduced features, outliers removed
+    density_data_subset --> 
+    density_features_subset -->
+    reduced_feats --> 
+
+
+MAPIdata-All: 5000 items, using simple $all query to pull items with all elements (and possibly more)
+MAPIdata  => precise in ternaries
+MAPIdata_subset --> outliers removed, features reduced

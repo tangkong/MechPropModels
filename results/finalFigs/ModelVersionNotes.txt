@@ -1,0 +1,11 @@
+v1.0: Base model, all magpie/matminer features, all data
+v1.5: Reduced feats, outliers stage 1 removed
+v2.0: Deviation model, difference between vegards and real
+
+
+Incrementally improving/modifying models:
+===============================================================================
+gen-0: No changes
+gen-1: outliers removed
+gen-2: features reduced
+gen-3: vegards + diff

@@ -1,0 +1,5 @@
+data target Youngs_Modulus_GPa
+save data datasets/featurized/featurized_data_stats stats
+save data datasets/featurized/featurized_data_featurized csv
+save data datasets/featurized/featurized_data_template template
+save data datasets/featurized/featurized_data
